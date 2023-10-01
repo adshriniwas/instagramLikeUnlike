@@ -5,8 +5,7 @@ import { FaBeer,FaUserCircle,FaHeart, FaRegHeart } from 'react-icons/fa';
 const Card = () => {
 
     const [likeCount,setLikeCount] = useState(0)
-    let element = document.getElementById("doubleLike")
-
+    
     const manageLike = ()=> {
         if(likeCount === 0){
             setLikeCount(1)
@@ -16,7 +15,8 @@ const Card = () => {
     }
 
     const clickToLike = ()=> {
-        
+        let element = document.getElementById("doubleLike")
+
         element.classList.remove("hide")
         setLikeCount(1)
         setTimeout(()=> {
@@ -27,7 +27,7 @@ const Card = () => {
   return (
     <div className='cardContainer'>
         <div className='contTop'>
-            <h1 className='cardTitle'>Instagram likes Card</h1>
+            <h1 className='cardTitle'>Instagram Card</h1>
             <p className='cardPara'>Like Count: <span>{likeCount}</span></p>
         </div>
         <div className='card'>
