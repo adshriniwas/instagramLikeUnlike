@@ -27,7 +27,7 @@ const Card = () => {
   return (
     <div className='cardContainer'>
         <div className='contTop'>
-            <h1 className='cardTitle'>Instagram Card</h1>
+            <h1 className='cardTitle'>Instagram likes Card</h1>
             <p className='cardPara'>Like Count: <span>{likeCount}</span></p>
         </div>
         <div className='card'>
