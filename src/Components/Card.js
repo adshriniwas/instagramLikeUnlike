@@ -47,12 +47,12 @@ const cardData = [
 
 const Card = () => {
 
-    // const [likeCount,setLikeCount] = useState(0)
+    
     const [cardDataState, setCardDataState] = useState(cardData)
     
     const manageLike = (ind)=> {
         if(cardDataState[ind].likeCount === 0){
-            // setLikeCount(1)
+            
             setCardDataState(()=>{
                 return cardDataState.map((crd,i)=>{
                     if(ind===i){
@@ -62,7 +62,7 @@ const Card = () => {
                 })
             })
         }else {
-            // setLikeCount(0)
+            
             setCardDataState(()=>{
                 return cardDataState.map((crd,i)=>{
                     if(ind===i){
@@ -77,11 +77,7 @@ const Card = () => {
     const clickToLike = (ind)=> {
         let element = document.getElementById(`doubleLike${ind}`)
 
-        // element.classList.remove("hide")
-        // setLikeCount(1)
-        // setTimeout(()=> {
-        //     element.classList.add("hide")
-        // },1000)
+        
 
         setCardDataState(()=>{
             return cardDataState.map((crd,i)=>{
